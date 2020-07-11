@@ -31,9 +31,12 @@
 #ifdef RN_FABRIC_ENABLED
 #import <React/RCTSurfacePresenter.h>
 #import <React/RCTFabricSurfaceHostingProxyRootView.h>
+#import <react/utils/ContextContainer.h>
+#import <react/config/ReactNativeConfig.h>
+#import <React/RCTSurfacePresenterBridgeAdapter.h>
 #endif
 
-  
+
 #if DEBUG
 #ifdef FB_SONARKIT_ENABLED
 #import <FlipperKit/FlipperClient.h>
@@ -54,6 +57,7 @@
 
 #ifdef RN_FABRIC_ENABLED
   RCTSurfacePresenter *_surfacePresenter;
+  RCTSurfacePresenterBridgeAdapter * adapter;
 #endif
 
   RCTTurboModuleManager *_turboModuleManager;
@@ -77,15 +81,11 @@
   }
 
 #ifdef RN_FABRIC_ENABLED
-  _surfacePresenter = [[RCTSurfacePresenter alloc] initWithBridge:_bridge
-                                                           config:nil
-                                                      imageLoader:RCTTurboModuleEnabled() ?
-                                                                  [_bridge moduleForName:@"RCTImageLoader"
-                                                                  lazilyLoadIfNecessary:YES] : nil
-                                                  runtimeExecutor:nullptr];
+  auto _contextContainer = std::make_shared<facebook::react::ContextContainer>();
+  std::shared_ptr<const facebook::react::ReactNativeConfig> _reactNativeConfig = std::make_shared<const facebook::react::EmptyReactNativeConfig>();
+  _contextContainer->insert("ReactNativeConfig", _reactNativeConfig);
 
-  _bridge.surfacePresenter = _surfacePresenter;
-
+  adapter = [[RCTSurfacePresenterBridgeAdapter alloc] initWithBridge:_bridge contextContainer:_contextContainer];
   UIView *rootView = [[RCTFabricSurfaceHostingProxyRootView alloc] initWithBridge:_bridge moduleName:@"RNTesterApp" initialProperties:initProps];
 #else
   UIView *rootView = [[RCTRootView alloc] initWithBridge:_bridge moduleName:@"RNTesterApp" initialProperties:initProps];
