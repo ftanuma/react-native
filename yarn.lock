@@ -2099,11 +2099,6 @@ babel-preset-jest@^24.9.0:
     "@babel/plugin-syntax-object-rest-spread" "^7.0.0"
     babel-plugin-jest-hoist "^24.9.0"
 
-babylon@^6.15.0:
-  version "6.18.0"
-  resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.18.0.tgz#af2f3b88fa6f5c1e4c634d1a0f8eac4f55b395e3"
-  integrity sha512-q/UEjfGJ2Cm3oKV71DJz9d25TPnq5rhBVL2Q4fA5wcC3jcrdn7+SssEybFIxwAvvP+YCsCYNKughoF33GxgycQ==
-
 balanced-match@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
@@ -3541,12 +3536,18 @@ flow-parser@0.*:
   resolved "https://registry.yarnpkg.com/flow-parser/-/flow-parser-0.89.0.tgz#c87bf45831644733dd576983ab12e75a3546573b"
   integrity sha512-vC8YuwhAPE+tbkz49DA/TjtFyfhcqM48occMdRQiZ/HL+Wg97IcuebMZUGVB4oBq7aHw0iJJtnvmlnmOQF7Ydg==
 
-flow-remove-types@1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/flow-remove-types/-/flow-remove-types-1.2.3.tgz#6131aefc7da43364bb8b479758c9dec7735d1a18"
-  integrity sha512-ypq/U3V+t9atYiOuSJd40tekCra03EHKoRsiK/wXGrsZimuum0kdwVY7Yv0HTaoXgHW1WiayomYd+Q3kkvPl9Q==
+flow-parser@^0.129.0:
+  version "0.129.0"
+  resolved "https://registry.yarnpkg.com/flow-parser/-/flow-parser-0.129.0.tgz#5924357da8f4982c11e02883a6ed10e954e61ea4"
+  integrity sha512-kzxyoEl8vG0JF0/h/u0UjALXmsGvwU2NBfKczCSNO/It2fKb8hz1gMt05OuZAlMLYXcvgjntWJadIABeKGPK4g==
+
+flow-remove-types@^2.129.0:
+  version "2.129.0"
+  resolved "https://registry.yarnpkg.com/flow-remove-types/-/flow-remove-types-2.129.0.tgz#ab5b88a5663802ab0bf59b6488a789609e3ab275"
+  integrity sha512-ucESHZUDQvEFzjRKstZMFBVIciRvXtKpVyPsJT+poIyOIxuPoCLiU/8HHnMBN9XHDWSJ2YJ91mv97n17NmI1Bg==
   dependencies:
-    babylon "^6.15.0"
+    flow-parser "^0.129.0"
+    pirates "^3.0.2"
     vlq "^0.2.1"
 
 for-in@^1.0.2:
@@ -6139,6 +6140,13 @@ pinkie@^2.0.0:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
   integrity sha1-clVrgM+g1IqXToDnckjoDtT3+HA=
+
+pirates@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/pirates/-/pirates-3.0.2.tgz#7e6f85413fd9161ab4e12b539b06010d85954bb9"
+  integrity sha512-c5CgUJq6H2k6MJz72Ak1F5sN9n9wlSlJyEnwvpm9/y3WB4E3pHBDT2c6PEiS1vyJvq2bUxUAIu0EGf8Cx4Ic7Q==
+  dependencies:
+    node-modules-regexp "^1.0.0"
 
 pirates@^4.0.0:
   version "4.0.0"
