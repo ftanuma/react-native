@@ -77,6 +77,51 @@ Pod::Spec.new do |s|
     ss.pod_target_xcconfig  = { "HEADER_SEARCH_PATHS" => "\"$(PODS_ROOT)/boost-for-react-native\" \"$(PODS_TARGET_SRCROOT)/ReactCommon\" \"$(PODS_ROOT)/Folly\"" }
   end
 
+  s.subspec "animations" do |ss|
+    ss.dependency             folly_dep_name, folly_version
+    ss.compiler_flags       = folly_compiler_flags + ' ' + boost_compiler_flags
+    ss.source_files         = "fabric/animations/**/*.{m,mm,cpp,h}"
+    ss.exclude_files        = "**/tests/**/*"
+    ss.header_dir           = "react/animations"
+    ss.pod_target_xcconfig  = { "HEADER_SEARCH_PATHS" => "\"$(PODS_ROOT)/boost-for-react-native\" \"$(PODS_TARGET_SRCROOT)/ReactCommon\" \"$(PODS_ROOT)/Folly\"" }
+  end
+
+  s.subspec "componentregistry" do |ss|
+    ss.dependency             folly_dep_name, folly_version
+    ss.compiler_flags       = folly_compiler_flags + ' ' + boost_compiler_flags
+    ss.source_files         = "fabric/componentregistry/**/*.{m,mm,cpp,h}"
+    ss.exclude_files        = "**/tests/**/*"
+    ss.header_dir           = "react/componentregistry"
+    ss.pod_target_xcconfig  = { "HEADER_SEARCH_PATHS" => "\"$(PODS_ROOT)/boost-for-react-native\" \"$(PODS_TARGET_SRCROOT)/ReactCommon\" \"$(PODS_ROOT)/Folly\"" }
+  end
+
+  s.subspec "element" do |ss|
+    ss.dependency             folly_dep_name, folly_version
+    ss.compiler_flags       = folly_compiler_flags + ' ' + boost_compiler_flags
+    ss.source_files         = "fabric/element/**/*.{m,mm,cpp,h}"
+    ss.exclude_files        = "**/tests/**/*"
+    ss.header_dir           = "react/element"
+    ss.pod_target_xcconfig  = { "HEADER_SEARCH_PATHS" => "\"$(PODS_ROOT)/boost-for-react-native\" \"$(PODS_TARGET_SRCROOT)/ReactCommon\" \"$(PODS_ROOT)/Folly\"" }
+  end
+
+  s.subspec "scheduler" do |ss|
+    ss.dependency             folly_dep_name, folly_version
+    ss.compiler_flags       = folly_compiler_flags + ' ' + boost_compiler_flags
+    ss.source_files         = "fabric/scheduler/**/*.{m,mm,cpp,h}"
+    ss.exclude_files        = "**/tests/**/*"
+    ss.header_dir           = "react/scheduler"
+    ss.pod_target_xcconfig  = { "HEADER_SEARCH_PATHS" => "\"$(PODS_ROOT)/boost-for-react-native\" \"$(PODS_TARGET_SRCROOT)/ReactCommon\" \"$(PODS_ROOT)/Folly\"" }
+  end
+
+  s.subspec "templateprocessor" do |ss|
+    ss.dependency             folly_dep_name, folly_version
+    ss.compiler_flags       = folly_compiler_flags + ' ' + boost_compiler_flags
+    ss.source_files         = "fabric/templateprocessor/**/*.{m,mm,cpp,h}"
+    ss.exclude_files        = "**/tests/**/*"
+    ss.header_dir           = "react/templateprocessor"
+    ss.pod_target_xcconfig  = { "HEADER_SEARCH_PATHS" => "\"$(PODS_ROOT)/boost-for-react-native\" \"$(PODS_TARGET_SRCROOT)/ReactCommon\" \"$(PODS_ROOT)/Folly\"" }
+  end
+
   s.subspec "components" do |ss|
     ss.subspec "activityindicator" do |sss|
       sss.dependency             folly_dep_name, folly_version
@@ -93,6 +138,15 @@ Pod::Spec.new do |s|
       sss.source_files         = "fabric/components/image/**/*.{m,mm,cpp,h}"
       sss.exclude_files        = "**/tests/*"
       sss.header_dir           = "react/components/image"
+      sss.pod_target_xcconfig  = { "HEADER_SEARCH_PATHS" => "\"$(PODS_TARGET_SRCROOT)/ReactCommon\" \"$(PODS_ROOT)/Folly\"" }
+    end
+
+    ss.subspec "inputaccessory" do |sss|
+      sss.dependency             folly_dep_name, folly_version
+      sss.compiler_flags       = folly_compiler_flags
+      sss.source_files         = "fabric/components/inputaccessory/**/*.{m,mm,cpp,h}"
+      sss.exclude_files        = "**/tests/*"
+      sss.header_dir           = "react/components/inputaccessory"
       sss.pod_target_xcconfig  = { "HEADER_SEARCH_PATHS" => "\"$(PODS_TARGET_SRCROOT)/ReactCommon\" \"$(PODS_ROOT)/Folly\"" }
     end
 
