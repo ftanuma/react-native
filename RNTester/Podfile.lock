@@ -66,6 +66,10 @@ PODS:
     - boost-for-react-native
     - DoubleConversion
     - glog
+  - Folly/Fabric (2020.01.13.00):
+    - boost-for-react-native
+    - DoubleConversion
+    - glog
   - glog (0.3.5)
   - OpenSSL-Universal (1.0.2.19):
     - OpenSSL-Universal/Static (= 1.0.2.19)
@@ -363,6 +367,7 @@ DEPENDENCIES:
   - FlipperKit/FlipperKitUserDefaultsPlugin (~> 0.54.0)
   - FlipperKit/SKIOSNetworkPlugin (~> 0.54.0)
   - Folly (from `../third-party-podspecs/Folly.podspec`)
+  - Folly/Fabric (from `../third-party-podspecs/Folly.podspec`)
   - glog (from `../third-party-podspecs/glog.podspec`)
   - RCTRequired (from `../Libraries/RCTRequired`)
   - RCTTypeSafety (from `../Libraries/TypeSafety`)
@@ -374,12 +379,16 @@ DEPENDENCIES:
   - React-Core/RCTWebSocket (from `../`)
   - React-CoreModules (from `../React/CoreModules`)
   - React-cxxreact (from `../ReactCommon/cxxreact`)
+  - React-Fabric (from `../ReactCommon`)
+  - React-graphics (from `../ReactCommon/fabric/graphics`)
   - React-jsi (from `../ReactCommon/jsi`)
+  - React-jsi/Fabric (from `../ReactCommon/jsi`)
   - React-jsiexecutor (from `../ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../ReactCommon/jsinspector`)
   - React-RCTActionSheet (from `../Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../Libraries/NativeAnimation`)
   - React-RCTBlob (from `../Libraries/Blob`)
+  - React-RCTFabric (from `../React`)
   - React-RCTImage (from `../Libraries/Image`)
   - React-RCTLinking (from `../Libraries/LinkingIOS`)
   - React-RCTNetwork (from `../Libraries/Network`)
@@ -434,6 +443,10 @@ EXTERNAL SOURCES:
     :path: "../React/CoreModules"
   React-cxxreact:
     :path: "../ReactCommon/cxxreact"
+  React-Fabric:
+    :path: "../ReactCommon"
+  React-graphics:
+    :path: "../ReactCommon/fabric/graphics"
   React-jsi:
     :path: "../ReactCommon/jsi"
   React-jsiexecutor:
@@ -446,6 +459,8 @@ EXTERNAL SOURCES:
     :path: "../Libraries/NativeAnimation"
   React-RCTBlob:
     :path: "../Libraries/Blob"
+  React-RCTFabric:
+    :path: "../React"
   React-RCTImage:
     :path: "../Libraries/Image"
   React-RCTLinking:
@@ -510,6 +525,6 @@ SPEC CHECKSUMS:
   Yoga: 7740b94929bbacbddda59bf115b5317e9a161598
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 5f0be4be03d6934478b9dd621bfbab4383b8c85d
+PODFILE CHECKSUM: e69c99d530b9602b77d1e6a63abea117f3a13551
 
 COCOAPODS: 1.9.3
