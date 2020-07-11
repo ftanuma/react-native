@@ -263,17 +263,30 @@ PODS:
     - Folly/Fabric (= 2020.01.13.00)
     - RCTRequired (= 1000.0.0)
     - RCTTypeSafety (= 1000.0.0)
+    - React-Fabric/animations (= 1000.0.0)
     - React-Fabric/attributedstring (= 1000.0.0)
     - React-Fabric/better (= 1000.0.0)
+    - React-Fabric/componentregistry (= 1000.0.0)
     - React-Fabric/components (= 1000.0.0)
     - React-Fabric/config (= 1000.0.0)
     - React-Fabric/core (= 1000.0.0)
     - React-Fabric/debug (= 1000.0.0)
+    - React-Fabric/element (= 1000.0.0)
     - React-Fabric/imagemanager (= 1000.0.0)
     - React-Fabric/mounting (= 1000.0.0)
+    - React-Fabric/scheduler (= 1000.0.0)
+    - React-Fabric/templateprocessor (= 1000.0.0)
     - React-Fabric/textlayoutmanager (= 1000.0.0)
     - React-Fabric/uimanager (= 1000.0.0)
     - React-Fabric/utils (= 1000.0.0)
+    - React-graphics (= 1000.0.0)
+    - React-jsi (= 1000.0.0)
+    - React-jsiexecutor (= 1000.0.0)
+    - ReactCommon/turbomodule/core (= 1000.0.0)
+  - React-Fabric/animations (1000.0.0):
+    - Folly/Fabric (= 2020.01.13.00)
+    - RCTRequired (= 1000.0.0)
+    - RCTTypeSafety (= 1000.0.0)
     - React-graphics (= 1000.0.0)
     - React-jsi (= 1000.0.0)
     - React-jsiexecutor (= 1000.0.0)
@@ -294,12 +307,21 @@ PODS:
     - React-jsi (= 1000.0.0)
     - React-jsiexecutor (= 1000.0.0)
     - ReactCommon/turbomodule/core (= 1000.0.0)
+  - React-Fabric/componentregistry (1000.0.0):
+    - Folly/Fabric (= 2020.01.13.00)
+    - RCTRequired (= 1000.0.0)
+    - RCTTypeSafety (= 1000.0.0)
+    - React-graphics (= 1000.0.0)
+    - React-jsi (= 1000.0.0)
+    - React-jsiexecutor (= 1000.0.0)
+    - ReactCommon/turbomodule/core (= 1000.0.0)
   - React-Fabric/components (1000.0.0):
     - Folly/Fabric (= 2020.01.13.00)
     - RCTRequired (= 1000.0.0)
     - RCTTypeSafety (= 1000.0.0)
     - React-Fabric/components/activityindicator (= 1000.0.0)
     - React-Fabric/components/image (= 1000.0.0)
+    - React-Fabric/components/inputaccessory (= 1000.0.0)
     - React-Fabric/components/legacyviewmanagerinterop (= 1000.0.0)
     - React-Fabric/components/modal (= 1000.0.0)
     - React-Fabric/components/rncore (= 1000.0.0)
@@ -324,6 +346,14 @@ PODS:
     - React-jsiexecutor (= 1000.0.0)
     - ReactCommon/turbomodule/core (= 1000.0.0)
   - React-Fabric/components/image (1000.0.0):
+    - Folly/Fabric (= 2020.01.13.00)
+    - RCTRequired (= 1000.0.0)
+    - RCTTypeSafety (= 1000.0.0)
+    - React-graphics (= 1000.0.0)
+    - React-jsi (= 1000.0.0)
+    - React-jsiexecutor (= 1000.0.0)
+    - ReactCommon/turbomodule/core (= 1000.0.0)
+  - React-Fabric/components/inputaccessory (1000.0.0):
     - Folly/Fabric (= 2020.01.13.00)
     - RCTRequired (= 1000.0.0)
     - RCTTypeSafety (= 1000.0.0)
@@ -444,6 +474,14 @@ PODS:
     - React-jsi (= 1000.0.0)
     - React-jsiexecutor (= 1000.0.0)
     - ReactCommon/turbomodule/core (= 1000.0.0)
+  - React-Fabric/element (1000.0.0):
+    - Folly/Fabric (= 2020.01.13.00)
+    - RCTRequired (= 1000.0.0)
+    - RCTTypeSafety (= 1000.0.0)
+    - React-graphics (= 1000.0.0)
+    - React-jsi (= 1000.0.0)
+    - React-jsiexecutor (= 1000.0.0)
+    - ReactCommon/turbomodule/core (= 1000.0.0)
   - React-Fabric/imagemanager (1000.0.0):
     - Folly/Fabric (= 2020.01.13.00)
     - RCTRequired (= 1000.0.0)
@@ -454,6 +492,22 @@ PODS:
     - React-RCTImage (= 1000.0.0)
     - ReactCommon/turbomodule/core (= 1000.0.0)
   - React-Fabric/mounting (1000.0.0):
+    - Folly/Fabric (= 2020.01.13.00)
+    - RCTRequired (= 1000.0.0)
+    - RCTTypeSafety (= 1000.0.0)
+    - React-graphics (= 1000.0.0)
+    - React-jsi (= 1000.0.0)
+    - React-jsiexecutor (= 1000.0.0)
+    - ReactCommon/turbomodule/core (= 1000.0.0)
+  - React-Fabric/scheduler (1000.0.0):
+    - Folly/Fabric (= 2020.01.13.00)
+    - RCTRequired (= 1000.0.0)
+    - RCTTypeSafety (= 1000.0.0)
+    - React-graphics (= 1000.0.0)
+    - React-jsi (= 1000.0.0)
+    - React-jsiexecutor (= 1000.0.0)
+    - ReactCommon/turbomodule/core (= 1000.0.0)
+  - React-Fabric/templateprocessor (1000.0.0):
     - Folly/Fabric (= 2020.01.13.00)
     - RCTRequired (= 1000.0.0)
     - RCTTypeSafety (= 1000.0.0)
@@ -756,8 +810,8 @@ SPEC CHECKSUMS:
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
   CocoaLibEvent: 2fab71b8bd46dd33ddb959f7928ec5909f838e3f
   DoubleConversion: cde416483dac037923206447da6e1454df403714
-  FBLazyVector: d1d80e0f66304c26d3e889ef943f3643034a36f0
-  FBReactNativeSpec: 6ddba1e9f4b72f862009a9bb8c62b57e0e893bd3
+  FBLazyVector: ece3622a3f9d6c54960c0e248d78e499287ddbcc
+  FBReactNativeSpec: bd7b2cf3fdfa2ebe9ac0f00cd3e8b4991ae75af1
   Flipper: 33585e2d9810fe5528346be33bcf71b37bb7ae13
   Flipper-DoubleConversion: 38631e41ef4f9b12861c67d17cb5518d06badc41
   Flipper-Folly: c12092ea368353b58e992843a990a3225d4533c3
@@ -768,35 +822,35 @@ SPEC CHECKSUMS:
   Folly: b73c3869541e86821df3c387eb0af5f65addfab4
   glog: 40a13f7840415b9a77023fbcae0f1e6f43192af3
   OpenSSL-Universal: 8b48cc0d10c1b2923617dfe5c178aa9ed2689355
-  RCTRequired: c0375ee4e6056809ecc5cf71bd9d745987ac12ea
-  RCTTypeSafety: e20cbb009fede420e6f136f5a9629963b5ca06ac
-  React: e3986022d1f29389a8f74e5fe7871ffdc6810a42
-  React-ART: 4aef6de12448370e68766a0db54bf0e6a25ca7e9
-  React-callinvoker: 7d9fada9538c7fb61f1d6194493a511378e28dc8
-  React-Core: 9d649c61ea3a7dfaf04935909d11a12e7bd36b78
-  React-CoreModules: 92039d91f221a41adf2ced23153bb9e6eba66c5a
-  React-cxxreact: 58a1ad8cd8aabd5f91f58a072c5e8b69f3b85503
-  React-Fabric: d0b83614f9e32619baf96daa7f389756e3e8b01d
-  React-graphics: 9f343da70545de7f8b018f90bd89bd883e8f5442
-  React-jsi: cb1c8b351a652158ba0b5a1178efb927d9942df0
-  React-jsiexecutor: da4b19640b2793acc2d51ebbba791b7ada0684fa
-  React-jsinspector: 74268aefe2956f95f440dc574e74d070ce98d088
-  React-perflogger: 39ef1bbdf6be70af25fdf7ea6f8d96216effdbfb
-  React-RCTActionSheet: 9996cb7aded60ca329925276dc6faa39253c12b0
-  React-RCTAnimation: a7e9176b5aabf7f6443f777f46c402e4e1a3d147
-  React-RCTBlob: ee16bf4349010b73c8b604bcf297f547904aaa03
-  React-RCTFabric: d12ac6f0e03fecf135f311e4e2374d544646d365
-  React-RCTImage: 859af7cd94fa3cfbe81998451104690f79dc5cb9
-  React-RCTLinking: 745ecb14c516902a9b2c2f77487d607129f69952
-  React-RCTNetwork: fdb1c17c9c86a8f1d813837aac065d61b59aba47
-  React-RCTPushNotification: 511c44977479cb97625a15f9c154a590b950864c
-  React-RCTSettings: 5380929bd0c3c01d67054717925d3d9150d87662
-  React-RCTTest: c333bba39be29729895dcda9c9f1e721739621aa
-  React-RCTText: 5918b72cacf327ed4a297e42dd6c2a7ecd15ceee
-  React-RCTVibration: 370eb812d26cbb13bfdee283d284dc380a8b7e46
-  React-runtimeexecutor: 03daf51a594b5d3b8111f4430fd77ca618b89091
-  ReactCommon: f52c308eb786e1fc70327a5911395a3edcad4dd0
-  Yoga: 651e54b797c4f061d1228b31fe99f08d0a9181c4
+  RCTRequired: 9e1ea9e05c50ec4818044093d0029dc065b03ae8
+  RCTTypeSafety: 976a561652fab6da3bab631176c630ca744ea0ec
+  React: f15487c9768c8e0a97e429420e08b940bd620ef3
+  React-ART: b2ca179bd68b6fe2b1379232ce88d038149e6466
+  React-callinvoker: 52b02525833f5cdb3431ceea61dcb016b7ae4f57
+  React-Core: df7c08b16446b30772651a2bedc3ce0dfbe98e39
+  React-CoreModules: 9b6e6f355b6a44b3a2f5ff20af07170bd0f01f08
+  React-cxxreact: 3ae7974081eb05eb5ffce3d21954c2b79b79f846
+  React-Fabric: 7743b5a7b22b083fa799d5dfecc2c2aedf121341
+  React-graphics: de4cf8347320810c6be9cb0dcb18f874c49bb7b8
+  React-jsi: 930064a80672643b7bdd81f44e594e500bbd0a22
+  React-jsiexecutor: 179fbbb58282b5494fbd4f59befcd54ecb986370
+  React-jsinspector: 4a950030cc5da5c112f81c604731a452f0137303
+  React-perflogger: 18c208bce25e8926e60b8c907544ea3b6e39102f
+  React-RCTActionSheet: 4b611adf1b579687c95b980160fa566430bc8567
+  React-RCTAnimation: b72ddf0d87498d0352a6ba8df91417aedff3579a
+  React-RCTBlob: 9fe25c84fdcdb3cbac71f0c20d7656c789080d6c
+  React-RCTFabric: cf85938ffddaacb9a4305f530bd26393020b5a11
+  React-RCTImage: c0e1f77d04d39c8f1d70f565edb96eda2c43cf2c
+  React-RCTLinking: 58b0f064a792dd9d96a958cabdd70ca3209ba7cc
+  React-RCTNetwork: f20c7cb00307ac3c3047a8bd09d562f00a3b2d90
+  React-RCTPushNotification: dbe92bb34cd9c0e819ee356e1e6e1d2909c7c01c
+  React-RCTSettings: fe5128da8d3136b26910b61af43a688c72a734d7
+  React-RCTTest: 60467324fc776bc4cf8d8f27815d0d7a1be07d8a
+  React-RCTText: 83199337707a8f34a9ef59f29c3a4dd4331fa806
+  React-RCTVibration: 81df68e7d355cd747d2a87c803aa5253991822ac
+  React-runtimeexecutor: 9c6a177441024b24aea92c70d57463cd0b4c4b09
+  ReactCommon: 7789c0a1830edd56f4dd6961ef660d674f12b815
+  Yoga: df4c494dec9179d2cbcac6f65203fd8d60f217b0
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
 PODFILE CHECKSUM: b5ad721ca87a7ee89bbdc3a44bcc7767d3e8ba7d
