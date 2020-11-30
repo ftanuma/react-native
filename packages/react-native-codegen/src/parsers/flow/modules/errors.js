@@ -49,7 +49,7 @@ class UnsupportedModulePropertyParserError extends ParserError {
 }
 
 class UnsupportedFlowTypeAnnotationParserError extends ParserError {
-  +typeAnnotationType: string;
+  typeAnnotationType: string;
   constructor(hasteModuleName: string, typeAnnotation: $FlowFixMe) {
     super(
       hasteModuleName,
@@ -62,7 +62,7 @@ class UnsupportedFlowTypeAnnotationParserError extends ParserError {
 }
 
 class UnsupportedFlowGenericParserError extends ParserError {
-  +genericName: string;
+  genericName: string;
   constructor(hasteModuleName: string, genericTypeAnnotation: $FlowFixMe) {
     const genericName = genericTypeAnnotation.id.name;
     super(
@@ -76,8 +76,8 @@ class UnsupportedFlowGenericParserError extends ParserError {
 }
 
 class IncorrectlyParameterizedFlowGenericParserError extends ParserError {
-  +genericName: string;
-  +numTypeParameters: number;
+  genericName: string;
+  numTypeParameters: number;
 
   constructor(hasteModuleName: string, genericTypeAnnotation: $FlowFixMe) {
     if (genericTypeAnnotation.typeParameters == null) {

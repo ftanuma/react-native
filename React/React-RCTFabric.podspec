@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.platforms              = { :ios => "10.0" }
   s.source                 = source
   s.source_files           = "Fabric/**/*.{c,h,m,mm,S,cpp}",
-                             "Tests/**/*.{mm}"
+                            #  "Tests/**/*.{mm}"
   s.exclude_files          = "**/tests/*",
                              "**/android/*",
   s.compiler_flags         = folly_compiler_flags + ' ' + boost_compiler_flags
@@ -45,5 +45,5 @@ Pod::Spec.new do |s|
   s.dependency "React-Core", version
   s.dependency "React-Fabric", version
   s.dependency "React-RCTImage", version
-  s.dependency "Folly/Fabric", folly_version
+  s.dependency "RCT-Folly", folly_version
 end

@@ -26,7 +26,7 @@ def pods()
   # Additional Pods which are classed as unstable
   #
   # To use fabric: add `fabric_enabled` option to the use_react_native method above, like below
-  # use_react_native!(path: "..", fabric_enabled: true)
+  use_react_native!(path: prefix_path, fabric_enabled: true)
 end
 
 target 'RNTester' do
@@ -62,12 +62,12 @@ end
 
 pre_install do |installer|
   frameworks_pre_install(installer) if ENV['USE_FRAMEWORKS'] == '1'
-  if ENV['USE_CODEGEN'] != '0'
+  # if ENV['USE_CODEGEN'] != '0'
     prefix_path = "../.."
     codegen_path = "../../packages/react-native-codegen"
     system("./#{codegen_path}/scripts/oss/build.sh") or raise "Could not build react-native-codegen package"
     codegen_pre_install(installer, {path:prefix_path, codegen_path:codegen_path})
-  end
+  # end
 end
 
 post_install do |installer|

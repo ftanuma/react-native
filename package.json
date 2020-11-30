@@ -97,6 +97,7 @@
     "anser": "^1.4.9",
     "base64-js": "^1.1.2",
     "event-target-shim": "^5.0.1",
+    "flow-remove-types": "^2.138.0",
     "hermes-engine": "~0.7.0",
     "invariant": "^2.2.4",
     "jsc-android": "^245459.0.0",
@@ -119,6 +120,7 @@
   },
   "devDependencies": {
     "flow-bin": "^0.138.0",
+    "flow-node": "^2.138.0",
     "react": "17.0.1"
   },
   "detox": {
